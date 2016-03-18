@@ -1,0 +1,23 @@
+{
+  "name": "search",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "moment": "^2.12.0",
+    "bootstrap": "^3.3.6"
+  },
+  "authors": [
+    "Cassandra Culkins <cassy.culkins@gmail.com>"
+  ]
+}
