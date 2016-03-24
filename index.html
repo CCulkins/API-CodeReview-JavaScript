@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <script type="text/javascript" src="build/js/app.js"></script>
+    <!-- <meta name="viewport" content="initial-scale=1.0"> -->
+    <!-- <meta charset="utf-8"> -->
     <title>Search GitHub</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
   </head>
   <body>
     <div>
@@ -15,7 +15,7 @@
       <h3>Enter a GitHub username into the form and submit it<br> to see names and descriptions of that person's public repositories.</h3>
     <div class="form">
       <label for="userRepo">Enter the username here.</label>
-      <input type="text" name="userRepoInput" id="userRepo">
+      <input type="text" id="userRepoInput" id="userRepo">
       <button type="submit" name="userRepoButton" class="btn btn-default">Submit</button>
       <div id="showRepos"></div>
     </div>
