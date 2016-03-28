@@ -1,12 +1,16 @@
 var apiKey = require('./../.env').apiKey;
 
 exports.getRepos = function(userName){
-$.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response){
-  $('#showRepos').text('Here is some information on' + userName + '.');
-console.log(response);
-  var fullUserInfo = response;
-  return fullUserInfo;
-}).fail(function(error) {
-  $('#showRepos').text(error.responseJSON.message);
-});
+  $.get('https://api.github.com/users/' + userName + '/repos?access_token=' + apiKey).then(function(response){
+
+    $('#showImage').append('<img src="' + response[0].owner.avatar_url + '">');
+
+    $('#showRepos').text('Here is some information on ' + userName + ':');
+    for (var i = 0; i < response.length; i++)
+    $("#showRepos").append('<li><a href="' + response[i].html_url + '"><h4>' + response[i].name + '</h4></a><h6> ' + response[i].description + '</h6></li>')
+
+
+  }).fail(function(error) {
+    $('#showRepos').text(error.responseJSON.message);
+  });
 };
