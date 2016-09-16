@@ -27,8 +27,9 @@ _Anyone may contact me about this program using the information listed below._
 
 * _Bootstrap_
 * _Gulp_
+* _Bower_
 * _JavaScript_
-* _SASS_
+* _CSS_
 * _API_
 
 ### License
